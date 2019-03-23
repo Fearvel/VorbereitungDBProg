@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView HorizontalAlignment="Left" Height="260" Margin="50,97,0,0" VerticalAlignment="Top" Width="265"
+                  x:Name="ListView1" SelectionChanged="ListView1_OnSelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="AddressID:" HorizontalAlignment="Left" Margin="390,103,0,0" VerticalAlignment="Top" />
+        <Label Content="IDFIELD" HorizontalAlignment="Left" Margin="510,103,0,0" VerticalAlignment="Top"
+               x:Name="LabelAddressID" />
+        <Label Content="AddressLine1" HorizontalAlignment="Left" Margin="390,134,0,0" VerticalAlignment="Top" />
+        <Label Content="AddressLine2" HorizontalAlignment="Left" Margin="390,165,0,0" VerticalAlignment="Top" />
+        <Label Content="City" HorizontalAlignment="Left" Margin="390,196,0,0" VerticalAlignment="Top" />
+        <Label Content="PostalCode" HorizontalAlignment="Left" Margin="390,223,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"
+                 Margin="510,138,0,0" x:Name="TextBoxAddressLine1" TextChanged="TextBox_OnTextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"
+                 Margin="510,171,0,0" x:Name="TextBoxAddressLine2" TextChanged="TextBox_OnTextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"
+                 Margin="510,199,0,0" x:Name="TextBoxCity" TextChanged="TextBox_OnTextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"
+                 Margin="510,227,0,0" x:Name="TextBoxPostalCode" TextChanged="TextBox_OnTextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="100,45,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" x:Name="TextBoxSearch" TextChanged="TextBoxSearch_OnTextChanged"/>
+
+    </Grid>
+</Window>
